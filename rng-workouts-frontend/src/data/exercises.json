@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Push ups",
+    "muscleGroups": [
+      "Chest",
+      "Shoulders",
+      "Triceps"
+    ]
+  },
+  {
+    "name": "Rack pulls",
+    "muscleGroups": [
+      "Upper Back",
+      "Latissimus",
+      "Shoulders",
+      "Biceps"
+    ]
+  }
+]
