@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Exercise Name renders the headline in collapsed mode 1`] = `
+.c0 {
+  padding: 4px 8px;
+  margin-top: 4px;
+  background-color: #fff;
+}
+
+<div
+  className="c0"
+>
+  <ExerciseName
+    name="Exercise"
+  />
+  <MuscleGroups
+    muscleGroups={
+      Array [
+        "Abs",
+      ]
+    }
+  />
+</div>
+`;

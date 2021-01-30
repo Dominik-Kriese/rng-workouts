@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Expander Headline renders the headline in collapsed mode 1`] = `
+.c0 {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+<h2
+  className="c0"
+  onClick={[Function]}
+>
+  title
+  <styled.span>
+    <span
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "&ndash;",
+        }
+      }
+    />
+  </styled.span>
+</h2>
+`;
+
+exports[`Expander Headline renders the headline in expanded mode 1`] = `
+.c0 {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+<h2
+  className="c0"
+  onClick={[Function]}
+>
+  title
+  <styled.span>
+    +
+  </styled.span>
+</h2>
+`;
