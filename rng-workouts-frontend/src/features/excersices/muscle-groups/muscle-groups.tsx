@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Groups = styled.p`
     font-size: 0.75rem;
-    opacity: 0.6;
+    color: ${props => props.theme.colors.text.defaultMedium};
 `
 
 const MuscleGroups = ({muscleGroups}: MuscleGroupsProps) => {

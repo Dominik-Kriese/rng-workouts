@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {ExpandedHeadlineProps} from '../props';
 
 const Headline = styled.h2`
+    color: ${props => props.theme.colors.text.defaultBright};
     font-weight: bold;
     font-size: 1.125rem;
 `
