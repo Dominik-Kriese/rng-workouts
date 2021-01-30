@@ -1,10 +1,11 @@
 import React from 'react';
-import styled, {ThemeProvider} from "styled-components";
-import theme from "./theme/theme";
-import GlobalStyle from "./theme/globalstyles";
-import Workouts from "./templates/workout";
-import exercises from "./data/exercises.json";
-import {Exercise} from "./features/excersices/types";
+import styled, {ThemeProvider} from 'styled-components';
+import theme from './theme/theme';
+import GlobalStyle from './theme/globalstyles';
+import Workouts from './templates/workouts';
+import exercises from './data/exercises.json';
+import {Exercise} from './features/excersices/types';
+import './app.css'
 
 const AppContainer = styled.div`
 `;

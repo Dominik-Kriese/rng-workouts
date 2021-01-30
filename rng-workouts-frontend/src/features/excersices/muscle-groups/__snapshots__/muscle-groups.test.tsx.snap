@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Muscle Groups displays the muscle groups 1`] = `
+.c0 {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+<p
+  className="c0"
+>
+  Abs, Biceps
+</p>
+`;

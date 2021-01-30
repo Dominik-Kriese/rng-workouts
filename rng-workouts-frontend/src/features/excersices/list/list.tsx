@@ -1,7 +1,8 @@
-import React, {useState} from "react";
-import ExerciseListItem from "../excersice/exercise-list-item";
-import {ExercisesProps} from "../props";
-import styled from "styled-components";
+import React, {useState} from 'react';
+import ExerciseListItem from '../excersice/exercise-list-item';
+import {ExercisesProps} from '../props';
+import styled from 'styled-components';
+import ExpanderHeadline from '../expander-headline/expander-headline';
 
 const ListWrapper = styled.div`
     background-color: #f4f4f4;
@@ -12,32 +13,15 @@ const ListWrapper = styled.div`
     }
 `
 
-const Headline = styled.h2`
-    font-weight: bold;
-    font-size: 1.25rem;
-`
-
-const Expander = styled.span`
-    font-weight: bold;
-    float: right;
-`
-
-// TODO: extract expansion header
 const ExerciseList = ({exercises}: ExercisesProps) => {
     const [expanded, setExpanded] = useState(false);
 
-    return <ListWrapper onClick={() => setExpanded(!expanded)}>
-        <Headline>
-            Übungsauswahl
-            <Expander>
-                {
-                    expanded ? '+' : <span dangerouslySetInnerHTML={{__html: '&ndash;'}} />
-                }
-            </Expander>
-        </Headline>
+    return <ListWrapper>
+        <ExpanderHeadline title={'Übungsauswahl'} expanded={expanded} callback={() => setExpanded(!expanded)}/>
         {
             expanded
-                ? exercises.map(exercise => <ExerciseListItem exercise={exercise}/>)
+                ? exercises.map((exercise, index) =>
+                    <ExerciseListItem exercise={exercise} key={'ex' + index} data-testid={'exercise'}/>)
                 : <></>
         }
     </ListWrapper>

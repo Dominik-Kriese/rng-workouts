@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Exercise Name renders the headline in collapsed mode 1`] = `
+<p
+  className=""
+>
+  Name
+</p>
+`;
